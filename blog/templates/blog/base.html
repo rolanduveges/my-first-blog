@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <head>
+        <title>Üveges Roland Blogt</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+  <body>
+    <div class="page-header">
+        <h1><a href="/">Üveges Roland Blog</a></h1>
+    </div>
+
+    <div class="content container">
+            <div class="col-md-3">Test</div>
+            <div class="col-md-9 .col-md-offset-9">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
